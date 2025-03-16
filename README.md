@@ -2,6 +2,7 @@ This project is a C-based penguin board game that simulates a strategic game whe
 
 future improvement:
 Consider developing a GUI to replace or enhance the current command-line interface.
+
 Integrate AI-controlled players for single-player mode or to complement multiplayer sessions: Iterate over each penguin of the current player. For each penguin, generate all valid moves (up, down, left, right) that lead to legal target positions. Evaluate each move using a state evaluation function, then choose the move with the highest score.
 
 
