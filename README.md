@@ -1,10 +1,36 @@
-This project is a C-based penguin board game that simulates a strategic game where multiple players place and move penguins on an ice floe board. The board is randomly initialized with different fish values, and players take turns to position and move their penguins to collect fish. The game supports saving and loading the state, allowing players to continue from where they left off. This project demonstrates core C programming techniques such as dynamic memory allocation, file I/O, and game state management.
+# Penguin Board Game
 
-future improvement:
-Consider developing a GUI to replace or enhance the current command-line interface.
+A C-based game where players control penguins on an ice floe board. Each tile contains a random number of fish, and players compete to collect as many fish as possible by placing and moving their penguins.
 
-Integrate AI-controlled players for single-player mode or to complement multiplayer sessions: Iterate over each penguin of the current player. For each penguin, generate all valid moves (up, down, left, right) that lead to legal target positions. Evaluate each move using a state evaluation function, then choose the move with the highest score.
+This project demonstrates core C programming techniques including dynamic memory allocation, file I/O and game state management.
 
+## Features
 
+- Randomly generated board dimensions with different fish values
+- Turn-based gameplay for up to eight players
+- Ability to save and load the current game state
+- Simple text-based interface
 
-this project did by: Daizhongtian < https://github.com/daizhongtian > ; VladyslavZelenkov  < https://github.com/VladyslavZelenkov >
+## Build and Run
+
+Compile the sources using GCC:
+
+```bash
+gcc main.c Source.c player.c -o penguin-game
+./penguin-game
+```
+
+Follow the on-screen prompts to set up the board and start playing.
+
+## Future Improvements
+
+- Develop a GUI to replace or enhance the command-line interface
+- Integrate AI-controlled players for single-player mode or to complement multiplayer sessions. For each penguin, generate legal moves in all directions, evaluate each move, and choose the best scoring option.
+
+## Authors
+
+- [Daizhongtian](https://github.com/daizhongtian)
+- [Vladyslav Zelenkov](https://github.com/VladyslavZelenkov)
+
+This project is released under the [MIT License](LICENSE).
+
